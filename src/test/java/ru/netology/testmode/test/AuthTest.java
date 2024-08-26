@@ -41,6 +41,10 @@ class AuthTest {
         $("[data-test-id='password'] input").setValue(registeredUser.getPassword());
         $("[data-test-id='action-login']").click();
 
+        $("h2")
+                .shouldHave(Condition.text("Личный кабинет"), Duration.ofSeconds(15)) //ассерт проверки текста (ожидание 15 сек)
+                .shouldBe(Condition.visible) //ассерт проверки видимости
+        ;
 
     }
 
@@ -74,6 +78,10 @@ class AuthTest {
         $("[data-test-id='password'] input").setValue(blockedUser.getPassword());
         $("[data-test-id='action-login']").click();
 
+        $("[data-test-id='error-notification'] .notification__content")
+                .shouldHave(Condition.text("Пользователь заблокирован"), Duration.ofSeconds(15)) //ассерт проверки текста (ожидание 15 сек)
+                .shouldBe(Condition.visible) //ассерт проверки видимости
+        ;
     }
 
     //Вход в личный кабинет с неверным логином
