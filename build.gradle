@@ -36,6 +36,10 @@ dependencies {
     //testImplementation 'io.github.bonigarcia:webdrivermanager:5.9.2'
 
     testImplementation 'io.rest-assured:rest-assured:5.3.1'
+
+    testImplementation 'com.google.code.gson:gson:2.8.6'
+    //Библиотека Gson нужна для того, чтобы иметь возможность
+    // сериализовать Java-объекты в JSON.
 }
 
 test {
