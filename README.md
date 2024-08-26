@@ -1,5 +1,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/50t58e000qawhyn1?svg=true)](https://ci.appveyor.com/project/SergGrebnev/automation-basics-2-3-2-patterns)
 
+[Оригинальная страница](https://github.com/netology-code/aqa-homeworks/tree/master/patterns)
+
 # Домашнее задание к занятию «2.3. Patterns»
 
 В качестве результата пришлите ссылку на ваш GitHub-проект в личном кабинете студента на сайте [netology.ru](https://netology.ru).
