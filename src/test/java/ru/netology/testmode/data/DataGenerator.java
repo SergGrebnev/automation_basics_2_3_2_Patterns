@@ -50,7 +50,7 @@ public class DataGenerator {
     public static String getRandomPassword() {
         // TODO: добавить логику для объявления переменной password и задания её значения, для генерации
         //  случайного пароля используйте faker
-        String password = String.valueOf(faker.hashCode());
+        String password = faker.internet().password();
         return password;
     }
 
